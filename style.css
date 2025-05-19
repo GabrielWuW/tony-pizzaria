@@ -480,6 +480,8 @@ footer {
     font-style: italic;
 }
 
+/*TABLET*/
+
 @media (max-width: 1024px) {
     header {
         position: absolute;
@@ -577,5 +579,69 @@ footer {
 
     .creditos {
         margin-bottom: 64px;
+    }
+}
+
+/*Mobile*/
+
+@media (max-width: 768px) {
+    .home {
+        background-image: 
+        linear-gradient(rgba(240, 120, 7, 0.694), rgba(240, 120, 7, 0.694)), url('./img/wallpaperMobile.jpg');
+        background-size: cover;
+        background-origin: start;
+    }
+
+    .home::before {
+        background-color: #f07807b5;
+    }
+
+    .hero img {
+        display: none;
+    }
+
+    .hero {
+        color: white;
+        font-style: italic;
+    }
+
+    .hero span {
+        color: var(--primary-color);
+        background-color: #fff;
+        font-style: italic;
+    }
+
+    .logo {
+        filter: brightness(0) invert(1);
+    }
+
+    .container-produtos .pizza:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    .cardapio {
+        align-items: center;
+        width: 100vw;
+    }
+
+    .opcoes-cardapio {
+        align-items: center;
+    }
+
+    .titulo-secao {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .titulo-opcoes a {
+        display: none;
+    }
+
+    .titulo-opcoes {
+        justify-content: center;
+    }
+
+    .container-produtos {
+        width: 100vw;
     }
 }
