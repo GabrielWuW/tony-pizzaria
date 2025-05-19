@@ -418,7 +418,6 @@ footer {
 .contatos-container {
     display: flex;
     gap: 32px;
-    height: 100%;
     width: 70%;
     justify-content: space-between;
     flex-grow: 1;
@@ -516,7 +515,67 @@ footer {
         padding-bottom: 64px;
     }
 
+    .container-produtos {
+        gap: 32px;
+    }
+
     .home .container-produtos {
         display: none;
+    }
+
+    .container-produtos .pizza:nth-last-child(-n+2) {
+        display: none;
+    }
+
+    .container-produtos .pizza {
+        width: 100%;
+    }
+
+    .container-produtos img {
+        width: 100%;
+    }
+
+    .pizza.bebida {
+        width: auto;
+    }
+
+    .opcoes-servicos {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .servico-card {
+        width: 100%;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+
+    .servico-card p {
+        width: 60%;
+    }
+
+    .contatos-item:nth-child(2) {
+        display: none;
+    }
+
+    .contatos-item {
+        padding: 0;
+        justify-content: center;
+        display: block;
+    }
+
+    .contatos-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 400px;
+        justify-content: center;
+    }
+
+    .contatos-item {
+        align-items: end;
+    }
+
+    .creditos {
+        margin-bottom: 64px;
     }
 }
