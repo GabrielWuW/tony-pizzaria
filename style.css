@@ -113,7 +113,8 @@ body {
 
 header {
     height: 60px;
-    width: 100%;
+    width: 94%;
+    margin-left: 5vh;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -121,7 +122,9 @@ header {
     top: 60px;
     padding: var(--default-padding);
     z-index: 9999;
-    background-color: #fff5;
+    background-color: rgba(255, 255, 255, 0.848);
+    border-radius: 10px;
+    box-shadow: var(--default-shadow);
 }
 
 header menu {
@@ -622,10 +625,13 @@ footer {
     .cardapio {
         align-items: center;
         width: 100vw;
+        gap: 5%;
+        padding-bottom: 90px;
     }
 
     .opcoes-cardapio {
         align-items: center;
+        border: none;
     }
 
     .titulo-secao {
@@ -643,5 +649,51 @@ footer {
 
     .container-produtos {
         width: 100vw;
+        justify-content: center;
+    }
+
+    .container-produtos .pizza {
+        width: 70%;
+    }
+
+    .pizza.bebida {
+        width: 21%;
+    }
+
+    .pizza.bebida:nth-child(1) {
+        display: none;
+    }
+
+    .servico-card p {
+        display: none;
+        
+    }
+
+    .servico-card {
+        width: 80%;
+        flex-direction: column;
+        
+    }
+
+    .opcoes-servicos {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contatos-container {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contatos-item.social menu {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .contatos-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
